@@ -10,8 +10,8 @@ Avant tout: lis la cible et les regles du CTF dans ~/cyber/targets/<ctf>.md (per
 Cree le dossier de run: RUN=~/cyber/runs/<ctf>-$(date +%F) ; mkdir -p "$RUN".
 
 Pipeline par challenge:
-1. Identifie la categorie du challenge (fichiers fournis, enonce, format de flag): crypto, reverse, pwn, forensics, stego, web, osint, misc.
-2. Delegue a l'agent CTF correspondant (ctf-crypto, ctf-reverse, ctf-pwn, ctf-forensics, ctf-stego, ctf-web, ctf-osint, ctf-misc). Un challenge mixte peut en mobiliser plusieurs.
+1. Identifie la categorie du challenge (fichiers fournis, enonce, format de flag): crypto, reverse, pwn, forensics, stego, web, osint, blockchain, mobile, hardware, misc.
+2. Delegue a l'agent CTF correspondant (ctf-crypto, ctf-reverse, ctf-pwn, ctf-forensics, ctf-stego, ctf-web, ctf-osint, ctf-blockchain, ctf-mobile, ctf-hardware, ctf-misc). Un challenge mixte peut en mobiliser plusieurs. Challenge de type machine a rooter -> ctf-boot2root. Competition Attack-Defense -> orchestrateur-ad (jeu distinct, ne passe pas par ce pipeline).
 3. L'agent renvoie: flag (si capture) + chemin de resolution concis.
 4. ctf-flag-tracker enregistre le challenge, son statut et le flag dans "$RUN/challenges.md".
 5. Des qu'un flag est capture: ctf-writeup redige le writeup du solve.
