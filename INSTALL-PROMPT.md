@@ -11,14 +11,14 @@ Tu installes une flotte de subagents de chasse aux vulnerabilites sur programmes
 sans rien tester d'offensif toi-meme :
 
 ## 1. Pre-vol
-- Confirme que le dossier courant contient `agents/*.md` (31 fichiers) et `cyber/` (targets, knowledge, runs).
+- Confirme que le dossier courant contient `agents/*.md` (56 fichiers) et `cyber/` (targets, knowledge, runs).
 - Cibles d'installation : `~/.claude/agents/` (subagents) et `~/cyber/` (travail).
 - Si des fichiers existent deja a ces emplacements, N'ECRASE RIEN : liste les conflits et attends mon accord.
 
 ## 2. Installer les agents
 - Copie `agents/*.md` vers `~/.claude/agents/`.
 - Verifie que chaque fichier a un frontmatter valide (`name`, `description`, `tools`, et `model` si present)
-  et que les 31 `name:` sont uniques.
+  et que les 56 `name:` sont uniques.
 
 ## 3. Installer l'arborescence de travail
 - Copie le contenu de `cyber/` vers `~/cyber/` (targets/, knowledge/, runs/).
@@ -33,8 +33,8 @@ sans rien tester d'offensif toi-meme :
 - Sorties d'un run      : `~/cyber/runs/<programme>-<date>/`
 
 ## 5. Verification
-- `ls ~/.claude/agents/*.md | wc -l`  doit donner 31.
-- Les 31 `name:` sont uniques (aucun doublon).
+- `ls ~/.claude/agents/*.md | wc -l`  doit donner 56.
+- Les 56 `name:` sont uniques (aucun doublon).
 - Affiche l'arbre de `~/cyber/` sur 2 niveaux.
 - Rappelle-moi qu'AUCUN programme reel n'est encore configure. Pour en ajouter un :
   copier `~/cyber/targets/_TEMPLATE-scope.md` vers `<programme>.md`, le remplir depuis la page officielle
